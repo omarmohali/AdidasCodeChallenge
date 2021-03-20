@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13A6F79426062EE700E2D656 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6F79326062EE700E2D656 /* ProductCell.swift */; };
+		13A6F79C2606319100E2D656 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6F79B2606319100E2D656 /* Review.swift */; };
+		13A6F7A22606320700E2D656 /* GetProductsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6F7A12606320700E2D656 /* GetProductsRequest.swift */; };
+		13A6F7AA260682B600E2D656 /* ProductCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A6F7A9260682B600E2D656 /* ProductCellViewModel.swift */; };
 		13D357332606178000C1D6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D357322606178000C1D6C9 /* AppDelegate.swift */; };
 		13D357352606178000C1D6C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D357342606178000C1D6C9 /* SceneDelegate.swift */; };
-		13D357372606178000C1D6C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D357362606178000C1D6C9 /* ViewController.swift */; };
+		13D357372606178000C1D6C9 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D357362606178000C1D6C9 /* ProductsViewController.swift */; };
 		13D3573A2606178000C1D6C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13D357382606178000C1D6C9 /* Main.storyboard */; };
 		13D3573C2606178300C1D6C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13D3573B2606178300C1D6C9 /* Assets.xcassets */; };
 		13D3573F2606178300C1D6C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13D3573D2606178300C1D6C9 /* LaunchScreen.storyboard */; };
 		13D3574A2606178300C1D6C9 /* AdidasCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D357492606178300C1D6C9 /* AdidasCodeChallengeTests.swift */; };
 		13D357552606178300C1D6C9 /* AdidasCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D357542606178300C1D6C9 /* AdidasCodeChallengeUITests.swift */; };
+		13D3577226062B5B00C1D6C9 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3577126062B5B00C1D6C9 /* ProductsViewModel.swift */; };
+		13D3578326062C6A00C1D6C9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D3578226062C6A00C1D6C9 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13A6F79326062EE700E2D656 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		13A6F79B2606319100E2D656 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		13A6F7A12606320700E2D656 /* GetProductsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsRequest.swift; sourceTree = "<group>"; };
+		13A6F7A9260682B600E2D656 /* ProductCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellViewModel.swift; sourceTree = "<group>"; };
 		13D3572F2606178000C1D6C9 /* AdidasCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdidasCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D357322606178000C1D6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13D357342606178000C1D6C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		13D357362606178000C1D6C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13D357362606178000C1D6C9 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		13D357392606178000C1D6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13D3573B2606178300C1D6C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13D3573E2606178300C1D6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		13D357502606178300C1D6C9 /* AdidasCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdidasCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D357542606178300C1D6C9 /* AdidasCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdidasCodeChallengeUITests.swift; sourceTree = "<group>"; };
 		13D357562606178300C1D6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13D3577126062B5B00C1D6C9 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		13D3578226062C6A00C1D6C9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13A6F79226062ED200E2D656 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				13A6F79326062EE700E2D656 /* ProductCell.swift */,
+				13A6F7A9260682B600E2D656 /* ProductCellViewModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		13A6F7A0260631F300E2D656 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				13A6F7A12606320700E2D656 /* GetProductsRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		13D357262606178000C1D6C9 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +128,11 @@
 		13D357312606178000C1D6C9 /* AdidasCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				13A6F7A0260631F300E2D656 /* Network */,
+				13D3578126062C5B00C1D6C9 /* Models */,
+				13D3577626062B6000C1D6C9 /* Presentation */,
 				13D357322606178000C1D6C9 /* AppDelegate.swift */,
 				13D357342606178000C1D6C9 /* SceneDelegate.swift */,
-				13D357362606178000C1D6C9 /* ViewController.swift */,
 				13D357382606178000C1D6C9 /* Main.storyboard */,
 				13D3573B2606178300C1D6C9 /* Assets.xcassets */,
 				13D3573D2606178300C1D6C9 /* LaunchScreen.storyboard */,
@@ -126,6 +157,49 @@
 				13D357562606178300C1D6C9 /* Info.plist */,
 			);
 			path = AdidasCodeChallengeUITests;
+			sourceTree = "<group>";
+		};
+		13D3577626062B6000C1D6C9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				13D3577726062B8400C1D6C9 /* Products */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		13D3577726062B8400C1D6C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13D3578A26062D4F00C1D6C9 /* ViewController */,
+				13D3578B26062D5F00C1D6C9 /* ViewModel */,
+				13A6F79226062ED200E2D656 /* Cells */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		13D3578126062C5B00C1D6C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13D3578226062C6A00C1D6C9 /* Product.swift */,
+				13A6F79B2606319100E2D656 /* Review.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		13D3578A26062D4F00C1D6C9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				13D357362606178000C1D6C9 /* ProductsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		13D3578B26062D5F00C1D6C9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				13D3577126062B5B00C1D6C9 /* ProductsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +332,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13D357372606178000C1D6C9 /* ViewController.swift in Sources */,
+				13A6F7A22606320700E2D656 /* GetProductsRequest.swift in Sources */,
+				13A6F7AA260682B600E2D656 /* ProductCellViewModel.swift in Sources */,
+				13D357372606178000C1D6C9 /* ProductsViewController.swift in Sources */,
+				13D3577226062B5B00C1D6C9 /* ProductsViewModel.swift in Sources */,
+				13A6F79C2606319100E2D656 /* Review.swift in Sources */,
+				13D3578326062C6A00C1D6C9 /* Product.swift in Sources */,
+				13A6F79426062EE700E2D656 /* ProductCell.swift in Sources */,
 				13D357332606178000C1D6C9 /* AppDelegate.swift in Sources */,
 				13D357352606178000C1D6C9 /* SceneDelegate.swift in Sources */,
 			);
