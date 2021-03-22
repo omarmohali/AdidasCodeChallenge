@@ -88,7 +88,6 @@ class ProductsViewModelTests: XCTestCase {
         }
         
         let didCallShowNetworkError = XCTestExpectation()
-        
         productsViewModel.showNetworkError = {
             networkError, onRetry in
             didCallShowNetworkError.fulfill()

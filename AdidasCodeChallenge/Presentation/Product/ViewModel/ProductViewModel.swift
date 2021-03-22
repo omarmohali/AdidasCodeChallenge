@@ -9,8 +9,9 @@ import Foundation
 
 class ProductViewModel: ViewControllerViewModel {
     
-    var productDidChange: (() -> Void)?
+    var postReviewRequest: PostReviewRequest
     
+    var productDidChange: (() -> Void)?
     private var product: Product {
         didSet {
             productDidChange?()
@@ -18,6 +19,7 @@ class ProductViewModel: ViewControllerViewModel {
     }
     init(product: Product) {
         self.product = product
+        postReviewRequest = PostReviewRequest(productId: product.id)
     }
     
     func getProduct() -> Product {
@@ -26,7 +28,6 @@ class ProductViewModel: ViewControllerViewModel {
     
     func didPostReview(rating: Int, reviewText: String) {
         let review = Review(productId: product.id, locale: "en-US", rating: rating, text: reviewText)
-        let postReviewRequest = PostReviewRequest(productId: product.id)
         postReviewRequest.postReview(review: review, complete: {
             [weak self] networkError in
             guard let self = self else { return }
