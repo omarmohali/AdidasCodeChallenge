@@ -14,6 +14,7 @@ struct Product: Decodable {
     let imageUrlString: String
     let price: Double
     let currency: String
+    var reviews: [Review]
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -22,5 +23,6 @@ struct Product: Decodable {
         case imageUrlString = "imgUrl"
         case price = "price"
         case currency = "currency"
+        case reviews = "reviews"
     }
 }

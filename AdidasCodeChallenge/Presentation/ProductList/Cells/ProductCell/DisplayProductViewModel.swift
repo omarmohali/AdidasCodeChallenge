@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ProductCellViewModel {
+class DisplayProductViewModel {
     let productName: String
     let productDescription: String
     let productPrice: String

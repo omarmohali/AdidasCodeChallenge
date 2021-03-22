@@ -76,7 +76,7 @@ extension ProductsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: productCellId) as! ProductCell
         if let product = viewModel.getFilteredProducts()?[indexPath.row] {
-            cell.viewModel = ProductCellViewModel(product: product)
+            cell.viewModel = DisplayProductViewModel(product: product)
         }
         return cell
     }
@@ -85,6 +85,18 @@ extension ProductsViewController: UITableViewDataSource {
 
 extension ProductsViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let product = viewModel.getFilteredProducts()?[indexPath.row] else {
+            return
+        }
+        
+        let productViewModel = ProductViewModel(product: product)
+        let productViewController = ProductViewController(viewModel: productViewModel)
+        DispatchQueue.main.async {
+            [weak self] in
+            self?.navigationController?.pushViewController(productViewController, animated: true)
+        }
+    }
 }
 
 extension ProductsViewController: UISearchBarDelegate {

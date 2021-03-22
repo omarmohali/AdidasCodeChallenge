@@ -44,4 +44,5 @@ enum NetworkError: Error {
     case noInternetConnection
     case apiError(statusCode: Int)
     case decodingError
+    case encodingError
 }

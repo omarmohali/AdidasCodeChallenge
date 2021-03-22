@@ -24,10 +24,6 @@ class ProductsViewModel {
         }
     }
     
-    func getFilteredProducts() -> [Product]? {
-        return filteredProducts
-    }
-    
     init() {
         
     }
@@ -46,6 +42,10 @@ class ProductsViewModel {
         })
     }
     
+    func getFilteredProducts() -> [Product]? {
+        return filteredProducts
+    }
+    
     private func updateFilteredProducts() {
         
         let searchText = self.searchText.lowercased()
@@ -59,7 +59,5 @@ class ProductsViewModel {
             })
             self.filteredProducts = filteredProducts
         }
-        
-        
     }
 }

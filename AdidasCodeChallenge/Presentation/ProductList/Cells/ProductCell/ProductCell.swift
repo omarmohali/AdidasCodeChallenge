@@ -9,7 +9,7 @@ import UIKit
 
 class ProductCell: UITableViewCell {
     
-    var viewModel: ProductCellViewModel? {
+    var viewModel: DisplayProductViewModel? {
         didSet {
             if let viewModel = viewModel {
                 bindData(viewModel: viewModel)
@@ -89,7 +89,7 @@ class ProductCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func bindData(viewModel: ProductCellViewModel) {
+    private func bindData(viewModel: DisplayProductViewModel) {
         productNameLabel.text = viewModel.productName
         productDescriptionLabel.text = viewModel.productDescription
         productPriceLabel.text = viewModel.productPrice
