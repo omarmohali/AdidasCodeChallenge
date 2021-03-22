@@ -1,0 +1,20 @@
+PODS:
+  - netfox (1.18.0)
+  - ReachabilitySwift (5.0.0)
+
+DEPENDENCIES:
+  - netfox
+  - ReachabilitySwift
+
+SPEC REPOS:
+  trunk:
+    - netfox
+    - ReachabilitySwift
+
+SPEC CHECKSUMS:
+  netfox: 95b3583c28e4a3376cc5a647d48e8e26f5b16d58
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+
+PODFILE CHECKSUM: 72e2a6ec3e9d982ac07a17d5ece1067eb6a0027f
+
+COCOAPODS: 1.9.3

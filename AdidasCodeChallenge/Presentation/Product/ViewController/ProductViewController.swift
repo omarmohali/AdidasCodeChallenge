@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProductViewController: UIViewController {
+class ProductViewController: ViewController<ProductViewModel> {
     
     private let reviewCellId = "Cell"
     private lazy var tableView: UITableView = {
@@ -19,10 +19,8 @@ class ProductViewController: UIViewController {
         return tv
     }()
     
-    private let viewModel: ProductViewModel
-    init(viewModel: ProductViewModel) {
-        self.viewModel = viewModel
-        super.init(nibName: nil, bundle: nil)
+    override init(viewModel: ProductViewModel) {
+        super.init(viewModel: viewModel)
         addSubviews()
         addConstraints()
         

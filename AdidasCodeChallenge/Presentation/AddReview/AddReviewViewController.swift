@@ -79,12 +79,12 @@ class AddReviewViewController: UIViewController {
         textView.topAnchor.constraint(equalTo: starsStackView.bottomAnchor, constant: 16).isActive = true
         textView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
         textView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
-        textView.heightAnchor.constraint(equalToConstant: 400).isActive = true
+        textView.heightAnchor.constraint(equalToConstant: 100).isActive = true
         
         submitButton.topAnchor.constraint(equalTo: textView.bottomAnchor, constant: 16).isActive = true
         submitButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16).isActive = true
         submitButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
-        textView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        submitButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
     }
     

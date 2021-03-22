@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ProductsViewModel {
+class ProductsViewModel: ViewControllerViewModel {
     
     private var allProducts: [Product]?
     
@@ -24,11 +24,11 @@ class ProductsViewModel {
         }
     }
     
-    init() {
-        
+    func viewDidAppear() {
+        getProducts()
     }
     
-    func viewDidLoad() {
+    private func getProducts() {
         let getProductsRequest = GetProductsRequest()
         getProductsRequest.getProducts(complete: {
             [weak self] result in
@@ -37,7 +37,9 @@ class ProductsViewModel {
                 self?.allProducts = products
                 self?.filteredProducts = products
             case .failure(let networkError):
-                print(networkError)
+                self?.showNetworkError?(networkError, {
+                    self?.getProducts()
+                })
             }
         })
     }

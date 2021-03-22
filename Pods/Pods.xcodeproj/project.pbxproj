@@ -1,0 +1,1283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0951830FDA7053E1A4C11B1B6142B39D /* NFXInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E72CBDFB2109E57DFA3266C170E /* NFXInfoController.swift */; };
+		09944176280C980EB49784DBCA380462 /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81665316B2B1C41A82979C7A8D73FED6 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09F20300429DCB4C2F17A9B1BA2DC03A /* NFXSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6783D4652648D43C39E2CBE7B5901A3 /* NFXSettingsController.swift */; };
+		12EA824D7BB93529DF764CC730F1A1AA /* NFXLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D01253EDC5FFCEFCB4BBD1F29E01075 /* NFXLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2065F4704C18236D6FFCE73EFCEF87C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		2710EA7700C724DE152624FEE0949B8B /* Pods-AdidasCodeChallengeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FB07B0E9C5DDD05F6EB4C872F8BB2EA /* Pods-AdidasCodeChallengeTests-dummy.m */; };
+		29270C7B84244D3D64D944AE7329B368 /* NFXHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCB82C7F50AC84068A082EC71709D88 /* NFXHelper.swift */; };
+		2C72A67D7B0D72BA185EC433FD8ED862 /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 011E68EC52B06C78061107A26E65B24C /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-dummy.m */; };
+		33CF97469D3F267E887B8320493B195A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		37B1F67C8521F3516D605A7D151E91A4 /* NFXProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB5EB5EA9B5917D72C3F10E0820F853 /* NFXProtocol.swift */; };
+		3816866BA7E0280765C0CF191A175683 /* NFXListCell_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE69A4B615249F235D8B06F260FD5FB /* NFXListCell_iOS.swift */; };
+		44F990AD8069E624447997A4DEA21583 /* NFXHTTPModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EA167CD3FD0773EC9E7E2DA02800E7 /* NFXHTTPModelManager.swift */; };
+		4CDF6F642A042BD187D21B4C9935DA21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		613142E0E3AADC9FE2C81551AD78D4AC /* NFXInfoController_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10EABC6BB18C19C4ADFD9A1FBF6E911 /* NFXInfoController_iOS.swift */; };
+		6B0B56EEA4A07332CBFDE6ECAAA9432F /* NFXGenericBodyDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4D1DFA24286A57A015A5B9ED49DBA /* NFXGenericBodyDetailsController.swift */; };
+		6DBA5C3250DA0A10F3836AFFEB62E4D2 /* NFXConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D88DFFDDE0D5ED1BF5C5E9B3898421 /* NFXConstants.swift */; };
+		7905407C27F35EBC33BA7751E68EBCD2 /* netfox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B39D27F7ED4D1B1F92838AA09A04C5C /* netfox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B06DB58DED9FFA56356EA721CBA3C6F /* NFXGenericController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18274C4242EB1380EDF57FE5AB92BE68 /* NFXGenericController.swift */; };
+		7D93DBEFC712D37DDC5E6B43EE4CBEB9 /* NFXDetailsController_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8658B755FF26E809E4F72ECC4C96E50 /* NFXDetailsController_iOS.swift */; };
+		7F2BB0C28C46D48AE36D2C88A06ED634 /* NFXDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1503F748684C30BDAE4160E3808DF1E /* NFXDetailsController.swift */; };
+		89A589D04411197399D7FCF7159AAE0A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EE968254130456936592FAD883A845 /* CoreTelephony.framework */; };
+		8B03A1BDC53BCF824A5BFB2B8005C897 /* NFXImageBodyDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DD7CC222ECE02EF7655901EC117505 /* NFXImageBodyDetailsController.swift */; };
+		8E939619FCBAC321106C9A094DE95A48 /* NFXWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD51B510C1FC83E3EEA34DA6E644FBCE /* NFXWindowController.swift */; };
+		903BE2F69609C9E1FD2041CBAC5745BE /* NFXRawBodyDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB14FDEBACF86880364B445B39A828 /* NFXRawBodyDetailsController.swift */; };
+		940C5B6904718C38E5DE1A79411B55CD /* NFXAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EF31C2BD3AFEF1AC86F8518B30699A /* NFXAssets.swift */; };
+		96B0FB469F72EB21DD3682F2E8817747 /* Pods-AdidasCodeChallengeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF9000664FE53131007D918F8AC7E6C /* Pods-AdidasCodeChallengeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		989CB0A8AF3D2EB7FB54BCEA528B20BA /* NFXSettingsController_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D38FDA58E929F714236582C338115C8 /* NFXSettingsController_iOS.swift */; };
+		A21BC68E8BFE3C87E3FAD1D150F1076E /* netfox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 776ED9A45ED6783291194E61C0E90A0F /* netfox-dummy.m */; };
+		A5196398D5690357C218B4CEA194C79F /* NFXListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBEBA416C153328DDC8FE0DED29DBF5 /* NFXListController.swift */; };
+		AC96F44279E61358242F26840D4853F0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2170F53B9E8401E6900D87C29B31B /* Reachability.swift */; };
+		AD53F5C0B622E54BC36A37A879CF2416 /* Pods-AdidasCodeChallenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 707DFD867351E126367348CD4BC6604D /* Pods-AdidasCodeChallenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1AC2E3388C825F95A911BC017C0EEDA /* NFXAuthenticationChallengeSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21084085E50663F378F15A944658EFC /* NFXAuthenticationChallengeSender.swift */; };
+		B4A88E097EB42B2A4AD9029D8934974F /* NFXLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFB3D7ADB6EB3B096A6CAAC26AF41CF /* NFXLoader.m */; };
+		B94E51E6BB91A3EDFFD7FC393190ED4A /* NFXURLDetailsControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC8CEAAE5AB4DB3034F8762A43DD578 /* NFXURLDetailsControllerViewController.swift */; };
+		BEFA9B4474547E4A78BEA13812187BF0 /* NFXHTTPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4649BE3852084A22339AD6DB091F44E5 /* NFXHTTPModel.swift */; };
+		CD80EA633F58BA32818CC6E0A7F0E3A0 /* NFXListController_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7846106E30697B75486F58B65614BCE /* NFXListController_iOS.swift */; };
+		CEF1D9E519A4F032943CB23E95453533 /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA3AAF3D37A666B6FAA66AB553172E1C /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF100FF8BBDDF8937FF6F612C37EA20A /* NFX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B14D0A119BF0238BB60DDE35286737B /* NFX.swift */; };
+		D8DAE9E46FDE304CF021B99AB1B8EE25 /* NFXStatisticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7103DD696EBBB085F450359E9147C9 /* NFXStatisticsController.swift */; };
+		DCF65FAF1D61BEF90078B45B87068A9A /* NFXHelper_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138D0D01703BBB9AB4049E35FAE41AD5 /* NFXHelper_iOS.swift */; };
+		E31F733EF047862E2CFD3893F11E3B8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		E5938189529B1F8BD074BB166C8BDE57 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64256263F0F1E673BCBD67DF6958420 /* SystemConfiguration.framework */; };
+		E5F6ACACDF29D937A21E7DEC85A13E3E /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 798F436EAED8BF4D70A6366A4D9B71C9 /* ReachabilitySwift-dummy.m */; };
+		F626DF5B94A0FA3B041FC6C2B8DDE35E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */; };
+		F976942E7D4D2F373180B301E4FD31A2 /* NFXStatisticsController_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FCB3E471F194D75471CCB53A91453B /* NFXStatisticsController_iOS.swift */; };
+		FF189100DA6F94227FF5B451E9FAF443 /* Pods-AdidasCodeChallenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E93FE1D6D863B36CF52CE20E48E0AA53 /* Pods-AdidasCodeChallenge-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0062CF10C1E985737762EFA8C7A17114 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B00B2C167CD783351BD1D00BD5AD1F8;
+			remoteInfo = ReachabilitySwift;
+		};
+		5BB41788697E5333ED6D0EC8969F8772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33426EFE1931E100B59ABF41FD14377D;
+			remoteInfo = netfox;
+		};
+		73BA38C467E7E51BA3F85306D5188312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC7335A4D14D05F51019F3B30A6ED3AA;
+			remoteInfo = "Pods-AdidasCodeChallenge";
+		};
+		789F225CA0DA4F6E6DC977F8793DED79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B00B2C167CD783351BD1D00BD5AD1F8;
+			remoteInfo = ReachabilitySwift;
+		};
+		C463138F37767E9F7A615BD3EEE3457F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33426EFE1931E100B59ABF41FD14377D;
+			remoteInfo = netfox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		011E68EC52B06C78061107A26E65B24C /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-dummy.m"; sourceTree = "<group>"; };
+		032F55295A68DBEEAB389425D67FB0E7 /* netfox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = netfox.modulemap; sourceTree = "<group>"; };
+		0662B183964BD753ED453D21C03B91E7 /* Pods-AdidasCodeChallengeTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdidasCodeChallengeTests-Info.plist"; sourceTree = "<group>"; };
+		0FB07B0E9C5DDD05F6EB4C872F8BB2EA /* Pods-AdidasCodeChallengeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdidasCodeChallengeTests-dummy.m"; sourceTree = "<group>"; };
+		1191977DCDB2535AA026172D70A7344C /* ReachabilitySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.release.xcconfig; sourceTree = "<group>"; };
+		11B93E72CBDFB2109E57DFA3266C170E /* NFXInfoController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXInfoController.swift; path = netfox/Core/NFXInfoController.swift; sourceTree = "<group>"; };
+		138D0D01703BBB9AB4049E35FAE41AD5 /* NFXHelper_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXHelper_iOS.swift; path = netfox/iOS/NFXHelper_iOS.swift; sourceTree = "<group>"; };
+		16DA5162484453E072AE5BDA262B75C6 /* ReachabilitySwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ReachabilitySwift-Info.plist"; sourceTree = "<group>"; };
+		18274C4242EB1380EDF57FE5AB92BE68 /* NFXGenericController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXGenericController.swift; path = netfox/Core/NFXGenericController.swift; sourceTree = "<group>"; };
+		198EA00803CB9FE7E5043A67699C6E62 /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1C58D8076691418353EB35E807D77B37 /* Pods_AdidasCodeChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AdidasCodeChallengeTests.framework; path = "Pods-AdidasCodeChallengeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FAF0822BD2E11D4FE19955A0538F2C0 /* netfox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "netfox-prefix.pch"; sourceTree = "<group>"; };
+		21B03CA622E690725A6626C088E1D09F /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reachability.framework; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		282F664666A59D9FC93AE632D9E755F9 /* Pods-AdidasCodeChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdidasCodeChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F04FD86663142ADBE8653FA57923A66 /* Pods-AdidasCodeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdidasCodeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		3782A3711F27118C3E4014AE3686839D /* Pods-AdidasCodeChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdidasCodeChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		3FBB14FDEBACF86880364B445B39A828 /* NFXRawBodyDetailsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXRawBodyDetailsController.swift; path = netfox/Core/NFXRawBodyDetailsController.swift; sourceTree = "<group>"; };
+		4031D32A6C8DDA5FB16B9C69C70F9ABF /* netfox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = netfox.release.xcconfig; sourceTree = "<group>"; };
+		4649BE3852084A22339AD6DB091F44E5 /* NFXHTTPModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXHTTPModel.swift; path = netfox/Core/NFXHTTPModel.swift; sourceTree = "<group>"; };
+		4B39D27F7ED4D1B1F92838AA09A04C5C /* netfox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "netfox-umbrella.h"; sourceTree = "<group>"; };
+		4D01253EDC5FFCEFCB4BBD1F29E01075 /* NFXLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NFXLoader.h; path = netfox/Core/NFXLoader.h; sourceTree = "<group>"; };
+		4D38FDA58E929F714236582C338115C8 /* NFXSettingsController_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXSettingsController_iOS.swift; path = netfox/iOS/NFXSettingsController_iOS.swift; sourceTree = "<group>"; };
+		4E57EF8AAABC262AB7D3A4D98313DCC0 /* netfox-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "netfox-Info.plist"; sourceTree = "<group>"; };
+		51D88DFFDDE0D5ED1BF5C5E9B3898421 /* NFXConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXConstants.swift; path = netfox/Core/NFXConstants.swift; sourceTree = "<group>"; };
+		5DFB3D7ADB6EB3B096A6CAAC26AF41CF /* NFXLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NFXLoader.m; path = netfox/Core/NFXLoader.m; sourceTree = "<group>"; };
+		609517D1671132C7EF0C4F4FC8B86339 /* ReachabilitySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.debug.xcconfig; sourceTree = "<group>"; };
+		685530F526ABC5F297705DF121B71262 /* Pods-AdidasCodeChallenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdidasCodeChallenge-frameworks.sh"; sourceTree = "<group>"; };
+		6A7103DD696EBBB085F450359E9147C9 /* NFXStatisticsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXStatisticsController.swift; path = netfox/Core/NFXStatisticsController.swift; sourceTree = "<group>"; };
+		6AD399CD8A906B30CF01790EEA0BF2E3 /* Pods_AdidasCodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AdidasCodeChallenge.framework; path = "Pods-AdidasCodeChallenge.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DCB82C7F50AC84068A082EC71709D88 /* NFXHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXHelper.swift; path = netfox/Core/NFXHelper.swift; sourceTree = "<group>"; };
+		707DFD867351E126367348CD4BC6604D /* Pods-AdidasCodeChallenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdidasCodeChallenge-umbrella.h"; sourceTree = "<group>"; };
+		773096B4405A6AC97A007BDC3C816C02 /* Pods-AdidasCodeChallenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AdidasCodeChallenge.modulemap"; sourceTree = "<group>"; };
+		776ED9A45ED6783291194E61C0E90A0F /* netfox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "netfox-dummy.m"; sourceTree = "<group>"; };
+		798F436EAED8BF4D70A6366A4D9B71C9 /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
+		7B14D0A119BF0238BB60DDE35286737B /* NFX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFX.swift; path = netfox/Core/NFX.swift; sourceTree = "<group>"; };
+		7B37C11208C92D1E03A6B9E4E135CA88 /* Pods-AdidasCodeChallenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdidasCodeChallenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		7DBEBA416C153328DDC8FE0DED29DBF5 /* NFXListController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXListController.swift; path = netfox/Core/NFXListController.swift; sourceTree = "<group>"; };
+		7FE4D1DFA24286A57A015A5B9ED49DBA /* NFXGenericBodyDetailsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXGenericBodyDetailsController.swift; path = netfox/Core/NFXGenericBodyDetailsController.swift; sourceTree = "<group>"; };
+		81665316B2B1C41A82979C7A8D73FED6 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
+		81DD7CC222ECE02EF7655901EC117505 /* NFXImageBodyDetailsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXImageBodyDetailsController.swift; path = netfox/Core/NFXImageBodyDetailsController.swift; sourceTree = "<group>"; };
+		836C9B22862020BFCA028AB4D4686B67 /* Pods-AdidasCodeChallenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdidasCodeChallenge-acknowledgements.markdown"; sourceTree = "<group>"; };
+		839B956FBA84C81E6F9DBA593050CF34 /* Pods-AdidasCodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdidasCodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		89FCB3E471F194D75471CCB53A91453B /* NFXStatisticsController_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXStatisticsController_iOS.swift; path = netfox/iOS/NFXStatisticsController_iOS.swift; sourceTree = "<group>"; };
+		8CE69A4B615249F235D8B06F260FD5FB /* NFXListCell_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXListCell_iOS.swift; path = netfox/iOS/NFXListCell_iOS.swift; sourceTree = "<group>"; };
+		8DB5EB5EA9B5917D72C3F10E0820F853 /* NFXProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXProtocol.swift; path = netfox/Core/NFXProtocol.swift; sourceTree = "<group>"; };
+		91D817A6179EAFCBB1F4C5DAC30D1D0B /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-frameworks.sh"; sourceTree = "<group>"; };
+		9481A16F105B2D0CFA9DAD9DC28CB00C /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
+		98EA167CD3FD0773EC9E7E2DA02800E7 /* NFXHTTPModelManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXHTTPModelManager.swift; path = netfox/Core/NFXHTTPModelManager.swift; sourceTree = "<group>"; };
+		9AF2170F53B9E8401E6900D87C29B31B /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Sources/Reachability.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F2BA584222F185B7292D02041262E39 /* Pods-AdidasCodeChallengeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdidasCodeChallengeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A5EF31C2BD3AFEF1AC86F8518B30699A /* NFXAssets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXAssets.swift; path = netfox/Core/NFXAssets.swift; sourceTree = "<group>"; };
+		AD51B510C1FC83E3EEA34DA6E644FBCE /* NFXWindowController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXWindowController.swift; path = netfox/Core/NFXWindowController.swift; sourceTree = "<group>"; };
+		B52D6A20028CB0823C46C414E3DE22A7 /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests.modulemap"; sourceTree = "<group>"; };
+		B8450231A460644C3827B7D521B642DC /* netfox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = netfox.debug.xcconfig; sourceTree = "<group>"; };
+		BAF9000664FE53131007D918F8AC7E6C /* Pods-AdidasCodeChallengeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdidasCodeChallengeTests-umbrella.h"; sourceTree = "<group>"; };
+		BF1952EA0085A4CE36B4AE041BE60B82 /* netfox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = netfox.framework; path = netfox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1503F748684C30BDAE4160E3808DF1E /* NFXDetailsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXDetailsController.swift; path = netfox/Core/NFXDetailsController.swift; sourceTree = "<group>"; };
+		C21084085E50663F378F15A944658EFC /* NFXAuthenticationChallengeSender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXAuthenticationChallengeSender.swift; path = netfox/Core/NFXAuthenticationChallengeSender.swift; sourceTree = "<group>"; };
+		C8658B755FF26E809E4F72ECC4C96E50 /* NFXDetailsController_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXDetailsController_iOS.swift; path = netfox/iOS/NFXDetailsController_iOS.swift; sourceTree = "<group>"; };
+		CDC8CEAAE5AB4DB3034F8762A43DD578 /* NFXURLDetailsControllerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXURLDetailsControllerViewController.swift; path = netfox/iOS/NFXURLDetailsControllerViewController.swift; sourceTree = "<group>"; };
+		D3E2949821C7BB1B8F1336CFF2BDEEC7 /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
+		D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D7846106E30697B75486F58B65614BCE /* NFXListController_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXListController_iOS.swift; path = netfox/iOS/NFXListController_iOS.swift; sourceTree = "<group>"; };
+		E0C839935224EF2B9EFA218E5DBD4C84 /* Pods_AdidasCodeChallenge_AdidasCodeChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AdidasCodeChallenge_AdidasCodeChallengeUITests.framework; path = "Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57308F3251B7F28727C1DACF12A1B68 /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E93FE1D6D863B36CF52CE20E48E0AA53 /* Pods-AdidasCodeChallenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdidasCodeChallenge-dummy.m"; sourceTree = "<group>"; };
+		E973EE5F402AEB3C8717C564FFF0DAAB /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EC272F89961413320D1DDB620AF8738F /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-Info.plist"; sourceTree = "<group>"; };
+		EE434D76DD26A234A99AB75FA4D3CC75 /* Pods-AdidasCodeChallengeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdidasCodeChallengeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F10EABC6BB18C19C4ADFD9A1FBF6E911 /* NFXInfoController_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXInfoController_iOS.swift; path = netfox/iOS/NFXInfoController_iOS.swift; sourceTree = "<group>"; };
+		F46F97CA73FE3C1E7057355E377EB5E4 /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F5E2326B85AD5F6C87B8CAB752585864 /* Pods-AdidasCodeChallengeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AdidasCodeChallengeTests.modulemap"; sourceTree = "<group>"; };
+		F64256263F0F1E673BCBD67DF6958420 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		F6783D4652648D43C39E2CBE7B5901A3 /* NFXSettingsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFXSettingsController.swift; path = netfox/Core/NFXSettingsController.swift; sourceTree = "<group>"; };
+		F6EE968254130456936592FAD883A845 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		F931D9F32CA8466A47524FFE117B0580 /* Pods-AdidasCodeChallenge-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdidasCodeChallenge-Info.plist"; sourceTree = "<group>"; };
+		FA3AAF3D37A666B6FAA66AB553172E1C /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		434EA9971660202B4D91341182604684 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E31F733EF047862E2CFD3893F11E3B8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DC17047AF80EB5286FDE658924DD97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2065F4704C18236D6FFCE73EFCEF87C6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A37A51219ED31062DE51A3E139BF37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89A589D04411197399D7FCF7159AAE0A /* CoreTelephony.framework in Frameworks */,
+				33CF97469D3F267E887B8320493B195A /* Foundation.framework in Frameworks */,
+				E5938189529B1F8BD074BB166C8BDE57 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABD131BBD629F18A627910757D63BCC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CDF6F642A042BD187D21B4C9935DA21 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6C4CA3E775B3073D21E2252B7C7170E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F626DF5B94A0FA3B041FC6C2B8DDE35E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65C892BC3ADB577FE47BB0D4B61FE2E0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06C7C8F69D9F69F40C4EC2B55815A278 /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B52D6A20028CB0823C46C414E3DE22A7 /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests.modulemap */,
+				E57308F3251B7F28727C1DACF12A1B68 /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-acknowledgements.markdown */,
+				F46F97CA73FE3C1E7057355E377EB5E4 /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-acknowledgements.plist */,
+				011E68EC52B06C78061107A26E65B24C /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-dummy.m */,
+				91D817A6179EAFCBB1F4C5DAC30D1D0B /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-frameworks.sh */,
+				EC272F89961413320D1DDB620AF8738F /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-Info.plist */,
+				FA3AAF3D37A666B6FAA66AB553172E1C /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-umbrella.h */,
+				198EA00803CB9FE7E5043A67699C6E62 /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests.debug.xcconfig */,
+				E973EE5F402AEB3C8717C564FFF0DAAB /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests.release.xcconfig */,
+			);
+			name = "Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests";
+			path = "Target Support Files/Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests";
+			sourceTree = "<group>";
+		};
+		1F420DCF7ABC441B46438AD40747113C /* ReachabilitySwift */ = {
+			isa = PBXGroup;
+			children = (
+				9AF2170F53B9E8401E6900D87C29B31B /* Reachability.swift */,
+				5220772BDF0ADF6897A6EF61E921429B /* Support Files */,
+			);
+			name = ReachabilitySwift;
+			path = ReachabilitySwift;
+			sourceTree = "<group>";
+		};
+		5220772BDF0ADF6897A6EF61E921429B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9481A16F105B2D0CFA9DAD9DC28CB00C /* ReachabilitySwift.modulemap */,
+				798F436EAED8BF4D70A6366A4D9B71C9 /* ReachabilitySwift-dummy.m */,
+				16DA5162484453E072AE5BDA262B75C6 /* ReachabilitySwift-Info.plist */,
+				D3E2949821C7BB1B8F1336CFF2BDEEC7 /* ReachabilitySwift-prefix.pch */,
+				81665316B2B1C41A82979C7A8D73FED6 /* ReachabilitySwift-umbrella.h */,
+				609517D1671132C7EF0C4F4FC8B86339 /* ReachabilitySwift.debug.xcconfig */,
+				1191977DCDB2535AA026172D70A7344C /* ReachabilitySwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ReachabilitySwift";
+			sourceTree = "<group>";
+		};
+		540EB66E36CB4526C6A1501C8D06DB40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				782742E6A78FEA6EB9FAAC1AB22F1D7E /* netfox */,
+				1F420DCF7ABC441B46438AD40747113C /* ReachabilitySwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		65C892BC3ADB577FE47BB0D4B61FE2E0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F6EE968254130456936592FAD883A845 /* CoreTelephony.framework */,
+				D711FBA503A6418C1F1C8082286D5985 /* Foundation.framework */,
+				F64256263F0F1E673BCBD67DF6958420 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6846AE0BF79E62C2906E355EA0FEAF3E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69F6C6320EC0974E988EEF7227F3C3D3 /* Pods-AdidasCodeChallenge */,
+				06C7C8F69D9F69F40C4EC2B55815A278 /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests */,
+				C586788B272260E814310243F3A53EE5 /* Pods-AdidasCodeChallengeTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		69F6C6320EC0974E988EEF7227F3C3D3 /* Pods-AdidasCodeChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				773096B4405A6AC97A007BDC3C816C02 /* Pods-AdidasCodeChallenge.modulemap */,
+				836C9B22862020BFCA028AB4D4686B67 /* Pods-AdidasCodeChallenge-acknowledgements.markdown */,
+				7B37C11208C92D1E03A6B9E4E135CA88 /* Pods-AdidasCodeChallenge-acknowledgements.plist */,
+				E93FE1D6D863B36CF52CE20E48E0AA53 /* Pods-AdidasCodeChallenge-dummy.m */,
+				685530F526ABC5F297705DF121B71262 /* Pods-AdidasCodeChallenge-frameworks.sh */,
+				F931D9F32CA8466A47524FFE117B0580 /* Pods-AdidasCodeChallenge-Info.plist */,
+				707DFD867351E126367348CD4BC6604D /* Pods-AdidasCodeChallenge-umbrella.h */,
+				3782A3711F27118C3E4014AE3686839D /* Pods-AdidasCodeChallenge.debug.xcconfig */,
+				839B956FBA84C81E6F9DBA593050CF34 /* Pods-AdidasCodeChallenge.release.xcconfig */,
+			);
+			name = "Pods-AdidasCodeChallenge";
+			path = "Target Support Files/Pods-AdidasCodeChallenge";
+			sourceTree = "<group>";
+		};
+		76F0A86FE6051EB9DA3E9D5F8803E82C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				032F55295A68DBEEAB389425D67FB0E7 /* netfox.modulemap */,
+				776ED9A45ED6783291194E61C0E90A0F /* netfox-dummy.m */,
+				4E57EF8AAABC262AB7D3A4D98313DCC0 /* netfox-Info.plist */,
+				1FAF0822BD2E11D4FE19955A0538F2C0 /* netfox-prefix.pch */,
+				4B39D27F7ED4D1B1F92838AA09A04C5C /* netfox-umbrella.h */,
+				B8450231A460644C3827B7D521B642DC /* netfox.debug.xcconfig */,
+				4031D32A6C8DDA5FB16B9C69C70F9ABF /* netfox.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/netfox";
+			sourceTree = "<group>";
+		};
+		782742E6A78FEA6EB9FAAC1AB22F1D7E /* netfox */ = {
+			isa = PBXGroup;
+			children = (
+				7B14D0A119BF0238BB60DDE35286737B /* NFX.swift */,
+				A5EF31C2BD3AFEF1AC86F8518B30699A /* NFXAssets.swift */,
+				C21084085E50663F378F15A944658EFC /* NFXAuthenticationChallengeSender.swift */,
+				51D88DFFDDE0D5ED1BF5C5E9B3898421 /* NFXConstants.swift */,
+				C1503F748684C30BDAE4160E3808DF1E /* NFXDetailsController.swift */,
+				C8658B755FF26E809E4F72ECC4C96E50 /* NFXDetailsController_iOS.swift */,
+				7FE4D1DFA24286A57A015A5B9ED49DBA /* NFXGenericBodyDetailsController.swift */,
+				18274C4242EB1380EDF57FE5AB92BE68 /* NFXGenericController.swift */,
+				6DCB82C7F50AC84068A082EC71709D88 /* NFXHelper.swift */,
+				138D0D01703BBB9AB4049E35FAE41AD5 /* NFXHelper_iOS.swift */,
+				4649BE3852084A22339AD6DB091F44E5 /* NFXHTTPModel.swift */,
+				98EA167CD3FD0773EC9E7E2DA02800E7 /* NFXHTTPModelManager.swift */,
+				81DD7CC222ECE02EF7655901EC117505 /* NFXImageBodyDetailsController.swift */,
+				11B93E72CBDFB2109E57DFA3266C170E /* NFXInfoController.swift */,
+				F10EABC6BB18C19C4ADFD9A1FBF6E911 /* NFXInfoController_iOS.swift */,
+				8CE69A4B615249F235D8B06F260FD5FB /* NFXListCell_iOS.swift */,
+				7DBEBA416C153328DDC8FE0DED29DBF5 /* NFXListController.swift */,
+				D7846106E30697B75486F58B65614BCE /* NFXListController_iOS.swift */,
+				4D01253EDC5FFCEFCB4BBD1F29E01075 /* NFXLoader.h */,
+				5DFB3D7ADB6EB3B096A6CAAC26AF41CF /* NFXLoader.m */,
+				8DB5EB5EA9B5917D72C3F10E0820F853 /* NFXProtocol.swift */,
+				3FBB14FDEBACF86880364B445B39A828 /* NFXRawBodyDetailsController.swift */,
+				F6783D4652648D43C39E2CBE7B5901A3 /* NFXSettingsController.swift */,
+				4D38FDA58E929F714236582C338115C8 /* NFXSettingsController_iOS.swift */,
+				6A7103DD696EBBB085F450359E9147C9 /* NFXStatisticsController.swift */,
+				89FCB3E471F194D75471CCB53A91453B /* NFXStatisticsController_iOS.swift */,
+				CDC8CEAAE5AB4DB3034F8762A43DD578 /* NFXURLDetailsControllerViewController.swift */,
+				AD51B510C1FC83E3EEA34DA6E644FBCE /* NFXWindowController.swift */,
+				76F0A86FE6051EB9DA3E9D5F8803E82C /* Support Files */,
+			);
+			name = netfox;
+			path = netfox;
+			sourceTree = "<group>";
+		};
+		C586788B272260E814310243F3A53EE5 /* Pods-AdidasCodeChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5E2326B85AD5F6C87B8CAB752585864 /* Pods-AdidasCodeChallengeTests.modulemap */,
+				EE434D76DD26A234A99AB75FA4D3CC75 /* Pods-AdidasCodeChallengeTests-acknowledgements.markdown */,
+				9F2BA584222F185B7292D02041262E39 /* Pods-AdidasCodeChallengeTests-acknowledgements.plist */,
+				0FB07B0E9C5DDD05F6EB4C872F8BB2EA /* Pods-AdidasCodeChallengeTests-dummy.m */,
+				0662B183964BD753ED453D21C03B91E7 /* Pods-AdidasCodeChallengeTests-Info.plist */,
+				BAF9000664FE53131007D918F8AC7E6C /* Pods-AdidasCodeChallengeTests-umbrella.h */,
+				282F664666A59D9FC93AE632D9E755F9 /* Pods-AdidasCodeChallengeTests.debug.xcconfig */,
+				2F04FD86663142ADBE8653FA57923A66 /* Pods-AdidasCodeChallengeTests.release.xcconfig */,
+			);
+			name = "Pods-AdidasCodeChallengeTests";
+			path = "Target Support Files/Pods-AdidasCodeChallengeTests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				540EB66E36CB4526C6A1501C8D06DB40 /* Pods */,
+				ECF7BE089E3906C577E1ADC646B9D970 /* Products */,
+				6846AE0BF79E62C2906E355EA0FEAF3E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		ECF7BE089E3906C577E1ADC646B9D970 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF1952EA0085A4CE36B4AE041BE60B82 /* netfox.framework */,
+				6AD399CD8A906B30CF01790EEA0BF2E3 /* Pods_AdidasCodeChallenge.framework */,
+				E0C839935224EF2B9EFA218E5DBD4C84 /* Pods_AdidasCodeChallenge_AdidasCodeChallengeUITests.framework */,
+				1C58D8076691418353EB35E807D77B37 /* Pods_AdidasCodeChallengeTests.framework */,
+				21B03CA622E690725A6626C088E1D09F /* Reachability.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09F7B7D04C454C16C0015640CF269F7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09944176280C980EB49784DBCA380462 /* ReachabilitySwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11BDBF1AA3D833803DE32CCE487093CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7905407C27F35EBC33BA7751E68EBCD2 /* netfox-umbrella.h in Headers */,
+				12EA824D7BB93529DF764CC730F1A1AA /* NFXLoader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42918BB696F845FB7C970760FD93DF0E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF1D9E519A4F032943CB23E95453533 /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B977BDED689258A7C36F2BF7555FA962 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD53F5C0B622E54BC36A37A879CF2416 /* Pods-AdidasCodeChallenge-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0141E7D0A09F4B1EF002C9D4F78603A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B0FB469F72EB21DD3682F2E8817747 /* Pods-AdidasCodeChallengeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		071A5B67A6B56F094622DE110802B808 /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12EB84E90DA4BCF65F2AD23E68E0D38B /* Build configuration list for PBXNativeTarget "Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests" */;
+			buildPhases = (
+				42918BB696F845FB7C970760FD93DF0E /* Headers */,
+				E52D403590D4D0590124B1D6849459D2 /* Sources */,
+				434EA9971660202B4D91341182604684 /* Frameworks */,
+				6DFD63B159BD6231AB5F47B73E6ED3CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				665C76AAC98B760110F39A2EAD813324 /* PBXTargetDependency */,
+				966B354D2E502E79FC1E8C3A04AA7849 /* PBXTargetDependency */,
+			);
+			name = "Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests";
+			productName = "Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests";
+			productReference = E0C839935224EF2B9EFA218E5DBD4C84 /* Pods_AdidasCodeChallenge_AdidasCodeChallengeUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E50A4613BA081C4F47DEEC1F9B9176BA /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */;
+			buildPhases = (
+				09F7B7D04C454C16C0015640CF269F7E /* Headers */,
+				9C9FF78F6878BCE13B73B6BB5DD0A609 /* Sources */,
+				92A37A51219ED31062DE51A3E139BF37 /* Frameworks */,
+				1EA4E360633A1D5CC11F6E9C4EEC2475 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReachabilitySwift;
+			productName = ReachabilitySwift;
+			productReference = 21B03CA622E690725A6626C088E1D09F /* Reachability.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		33426EFE1931E100B59ABF41FD14377D /* netfox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7892CEEC13781101CA728B98D607D0FD /* Build configuration list for PBXNativeTarget "netfox" */;
+			buildPhases = (
+				11BDBF1AA3D833803DE32CCE487093CE /* Headers */,
+				DE013FE49A1CD5BDCA94B65EA36CF913 /* Sources */,
+				73DC17047AF80EB5286FDE658924DD97 /* Frameworks */,
+				F4354C4E1A10C8049F85BD382B0AD9DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = netfox;
+			productName = netfox;
+			productReference = BF1952EA0085A4CE36B4AE041BE60B82 /* netfox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7DAC6C927A7AB18AFE810E2089D81E70 /* Pods-AdidasCodeChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 922363C1B6004EF5E5EDA3C6EEDA8AF6 /* Build configuration list for PBXNativeTarget "Pods-AdidasCodeChallengeTests" */;
+			buildPhases = (
+				C0141E7D0A09F4B1EF002C9D4F78603A /* Headers */,
+				AF037B7563706CFD1FC32880E0ABBF71 /* Sources */,
+				ABD131BBD629F18A627910757D63BCC6 /* Frameworks */,
+				6BD74AC854AB0A918771C6B4BAD8A453 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C6AE2A56BCDB5BB747D74F30D74FEE8 /* PBXTargetDependency */,
+			);
+			name = "Pods-AdidasCodeChallengeTests";
+			productName = "Pods-AdidasCodeChallengeTests";
+			productReference = 1C58D8076691418353EB35E807D77B37 /* Pods_AdidasCodeChallengeTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FC7335A4D14D05F51019F3B30A6ED3AA /* Pods-AdidasCodeChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60B5E5AEA9A28FC0D50AEAEF561386EE /* Build configuration list for PBXNativeTarget "Pods-AdidasCodeChallenge" */;
+			buildPhases = (
+				B977BDED689258A7C36F2BF7555FA962 /* Headers */,
+				77F64A98F467F830C285924D79AFBB1A /* Sources */,
+				E6C4CA3E775B3073D21E2252B7C7170E /* Frameworks */,
+				01601C6AB717C7E68C87AC8E3031CF23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1FE15EDCFCDA6EB027B06D5F7E61352 /* PBXTargetDependency */,
+				78D8FC8F697F0EDC9323BC99B11F57E2 /* PBXTargetDependency */,
+			);
+			name = "Pods-AdidasCodeChallenge";
+			productName = "Pods-AdidasCodeChallenge";
+			productReference = 6AD399CD8A906B30CF01790EEA0BF2E3 /* Pods_AdidasCodeChallenge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = ECF7BE089E3906C577E1ADC646B9D970 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33426EFE1931E100B59ABF41FD14377D /* netfox */,
+				FC7335A4D14D05F51019F3B30A6ED3AA /* Pods-AdidasCodeChallenge */,
+				071A5B67A6B56F094622DE110802B808 /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests */,
+				7DAC6C927A7AB18AFE810E2089D81E70 /* Pods-AdidasCodeChallengeTests */,
+				0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01601C6AB717C7E68C87AC8E3031CF23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EA4E360633A1D5CC11F6E9C4EEC2475 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD74AC854AB0A918771C6B4BAD8A453 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFD63B159BD6231AB5F47B73E6ED3CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4354C4E1A10C8049F85BD382B0AD9DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77F64A98F467F830C285924D79AFBB1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF189100DA6F94227FF5B451E9FAF443 /* Pods-AdidasCodeChallenge-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C9FF78F6878BCE13B73B6BB5DD0A609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC96F44279E61358242F26840D4853F0 /* Reachability.swift in Sources */,
+				E5F6ACACDF29D937A21E7DEC85A13E3E /* ReachabilitySwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF037B7563706CFD1FC32880E0ABBF71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2710EA7700C724DE152624FEE0949B8B /* Pods-AdidasCodeChallengeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE013FE49A1CD5BDCA94B65EA36CF913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A21BC68E8BFE3C87E3FAD1D150F1076E /* netfox-dummy.m in Sources */,
+				CF100FF8BBDDF8937FF6F612C37EA20A /* NFX.swift in Sources */,
+				940C5B6904718C38E5DE1A79411B55CD /* NFXAssets.swift in Sources */,
+				B1AC2E3388C825F95A911BC017C0EEDA /* NFXAuthenticationChallengeSender.swift in Sources */,
+				6DBA5C3250DA0A10F3836AFFEB62E4D2 /* NFXConstants.swift in Sources */,
+				7F2BB0C28C46D48AE36D2C88A06ED634 /* NFXDetailsController.swift in Sources */,
+				7D93DBEFC712D37DDC5E6B43EE4CBEB9 /* NFXDetailsController_iOS.swift in Sources */,
+				6B0B56EEA4A07332CBFDE6ECAAA9432F /* NFXGenericBodyDetailsController.swift in Sources */,
+				7B06DB58DED9FFA56356EA721CBA3C6F /* NFXGenericController.swift in Sources */,
+				29270C7B84244D3D64D944AE7329B368 /* NFXHelper.swift in Sources */,
+				DCF65FAF1D61BEF90078B45B87068A9A /* NFXHelper_iOS.swift in Sources */,
+				BEFA9B4474547E4A78BEA13812187BF0 /* NFXHTTPModel.swift in Sources */,
+				44F990AD8069E624447997A4DEA21583 /* NFXHTTPModelManager.swift in Sources */,
+				8B03A1BDC53BCF824A5BFB2B8005C897 /* NFXImageBodyDetailsController.swift in Sources */,
+				0951830FDA7053E1A4C11B1B6142B39D /* NFXInfoController.swift in Sources */,
+				613142E0E3AADC9FE2C81551AD78D4AC /* NFXInfoController_iOS.swift in Sources */,
+				3816866BA7E0280765C0CF191A175683 /* NFXListCell_iOS.swift in Sources */,
+				A5196398D5690357C218B4CEA194C79F /* NFXListController.swift in Sources */,
+				CD80EA633F58BA32818CC6E0A7F0E3A0 /* NFXListController_iOS.swift in Sources */,
+				B4A88E097EB42B2A4AD9029D8934974F /* NFXLoader.m in Sources */,
+				37B1F67C8521F3516D605A7D151E91A4 /* NFXProtocol.swift in Sources */,
+				903BE2F69609C9E1FD2041CBAC5745BE /* NFXRawBodyDetailsController.swift in Sources */,
+				09F20300429DCB4C2F17A9B1BA2DC03A /* NFXSettingsController.swift in Sources */,
+				989CB0A8AF3D2EB7FB54BCEA528B20BA /* NFXSettingsController_iOS.swift in Sources */,
+				D8DAE9E46FDE304CF021B99AB1B8EE25 /* NFXStatisticsController.swift in Sources */,
+				F976942E7D4D2F373180B301E4FD31A2 /* NFXStatisticsController_iOS.swift in Sources */,
+				B94E51E6BB91A3EDFFD7FC393190ED4A /* NFXURLDetailsControllerViewController.swift in Sources */,
+				8E939619FCBAC321106C9A094DE95A48 /* NFXWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E52D403590D4D0590124B1D6849459D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C72A67D7B0D72BA185EC433FD8ED862 /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C6AE2A56BCDB5BB747D74F30D74FEE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AdidasCodeChallenge";
+			target = FC7335A4D14D05F51019F3B30A6ED3AA /* Pods-AdidasCodeChallenge */;
+			targetProxy = 73BA38C467E7E51BA3F85306D5188312 /* PBXContainerItemProxy */;
+		};
+		665C76AAC98B760110F39A2EAD813324 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReachabilitySwift;
+			target = 0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */;
+			targetProxy = 0062CF10C1E985737762EFA8C7A17114 /* PBXContainerItemProxy */;
+		};
+		78D8FC8F697F0EDC9323BC99B11F57E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = netfox;
+			target = 33426EFE1931E100B59ABF41FD14377D /* netfox */;
+			targetProxy = C463138F37767E9F7A615BD3EEE3457F /* PBXContainerItemProxy */;
+		};
+		966B354D2E502E79FC1E8C3A04AA7849 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = netfox;
+			target = 33426EFE1931E100B59ABF41FD14377D /* netfox */;
+			targetProxy = 5BB41788697E5333ED6D0EC8969F8772 /* PBXContainerItemProxy */;
+		};
+		F1FE15EDCFCDA6EB027B06D5F7E61352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReachabilitySwift;
+			target = 0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */;
+			targetProxy = 789F225CA0DA4F6E6DC977F8793DED79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1603ACD4C6847A105EE3EA6142B73A32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F04FD86663142ADBE8653FA57923A66 /* Pods-AdidasCodeChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdidasCodeChallengeTests/Pods-AdidasCodeChallengeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdidasCodeChallengeTests/Pods-AdidasCodeChallengeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2D24C8D3FA268A4D6506AA10D5E8FB0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 198EA00803CB9FE7E5043A67699C6E62 /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests/Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests/Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		441778011C5C5151C5F2D783E58E09EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839B956FBA84C81E6F9DBA593050CF34 /* Pods-AdidasCodeChallenge.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdidasCodeChallenge/Pods-AdidasCodeChallenge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdidasCodeChallenge/Pods-AdidasCodeChallenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5908717A11D6AF5FD4366D681DA8DE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1191977DCDB2535AA026172D70A7344C /* ReachabilitySwift.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_MODULE_NAME = Reachability;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5AF4F4744423752442E38B7630CE6637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 282F664666A59D9FC93AE632D9E755F9 /* Pods-AdidasCodeChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdidasCodeChallengeTests/Pods-AdidasCodeChallengeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdidasCodeChallengeTests/Pods-AdidasCodeChallengeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5F4FA5EBEA408451F68E685C1954CF7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3782A3711F27118C3E4014AE3686839D /* Pods-AdidasCodeChallenge.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdidasCodeChallenge/Pods-AdidasCodeChallenge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdidasCodeChallenge/Pods-AdidasCodeChallenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		75F5CA4AB4A205BB25E4333DC67F6CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8450231A460644C3827B7D521B642DC /* netfox.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/netfox/netfox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/netfox/netfox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/netfox/netfox.modulemap";
+				PRODUCT_MODULE_NAME = netfox;
+				PRODUCT_NAME = netfox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AD6EB0393DC0C2008FDF2D6A081BF4D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E973EE5F402AEB3C8717C564FFF0DAAB /* Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests/Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests/Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B1859E7EDB068327CA42B8769B78ED92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4031D32A6C8DDA5FB16B9C69C70F9ABF /* netfox.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/netfox/netfox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/netfox/netfox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/netfox/netfox.modulemap";
+				PRODUCT_MODULE_NAME = netfox;
+				PRODUCT_NAME = netfox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D7B77D4B863E883083E320094B3F5ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 609517D1671132C7EF0C4F4FC8B86339 /* ReachabilitySwift.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_MODULE_NAME = Reachability;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12EB84E90DA4BCF65F2AD23E68E0D38B /* Build configuration list for PBXNativeTarget "Pods-AdidasCodeChallenge-AdidasCodeChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D24C8D3FA268A4D6506AA10D5E8FB0C /* Debug */,
+				AD6EB0393DC0C2008FDF2D6A081BF4D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60B5E5AEA9A28FC0D50AEAEF561386EE /* Build configuration list for PBXNativeTarget "Pods-AdidasCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F4FA5EBEA408451F68E685C1954CF7D /* Debug */,
+				441778011C5C5151C5F2D783E58E09EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7892CEEC13781101CA728B98D607D0FD /* Build configuration list for PBXNativeTarget "netfox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75F5CA4AB4A205BB25E4333DC67F6CD8 /* Debug */,
+				B1859E7EDB068327CA42B8769B78ED92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		922363C1B6004EF5E5EDA3C6EEDA8AF6 /* Build configuration list for PBXNativeTarget "Pods-AdidasCodeChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AF4F4744423752442E38B7630CE6637 /* Debug */,
+				1603ACD4C6847A105EE3EA6142B73A32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E50A4613BA081C4F47DEEC1F9B9176BA /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7B77D4B863E883083E320094B3F5ECA /* Debug */,
+				5908717A11D6AF5FD4366D681DA8DE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

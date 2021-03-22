@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ProductViewModel {
+class ProductViewModel: ViewControllerViewModel {
     
     var productDidChange: (() -> Void)?
     
@@ -26,12 +26,14 @@ class ProductViewModel {
     
     func didPostReview(rating: Int, reviewText: String) {
         let review = Review(productId: product.id, locale: "en-US", rating: rating, text: reviewText)
-        let postReviewRequest = PostReviewRequest()
+        let postReviewRequest = PostReviewRequest(productId: product.id)
         postReviewRequest.postReview(review: review, complete: {
-            [weak self] error in
+            [weak self] networkError in
             guard let self = self else { return }
-            if let error = error {
-                print(error)
+            if let networkError = networkError {
+                self.showNetworkError?(networkError,  {
+                    self.didPostReview(rating: rating, reviewText: reviewText)
+                })
             } else {
                 self.product.reviews = [review] + self.product.reviews
             }

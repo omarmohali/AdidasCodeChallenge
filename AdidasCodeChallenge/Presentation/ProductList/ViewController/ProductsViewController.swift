@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProductsViewController: UIViewController {
+class ProductsViewController: ViewController<ProductsViewModel> {
 
     private let productCellId = "ProductCell"
     private lazy var tableView: UITableView = {
@@ -20,10 +20,8 @@ class ProductsViewController: UIViewController {
         return tv
     }()
     
-    private let viewModel: ProductsViewModel
-    init(viewModel: ProductsViewModel) {
-        self.viewModel = viewModel
-        super.init(nibName: nil, bundle: nil)
+    override init(viewModel: ProductsViewModel) {
+        super.init(viewModel: viewModel)
         addSubviews()
         addConstraints()
         viewModel.filteredDidChange = {
@@ -34,12 +32,8 @@ class ProductsViewController: UIViewController {
         }
         
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        viewModel.viewDidLoad()
-    }
 
+    
     private lazy var searchBar: UISearchBar = {
         let searchBar = UISearchBar(frame: CGRect(x: 16, y: view.frame.width - 16, width: view.frame.width - 32, height: 20))
         searchBar.delegate = self
@@ -50,6 +44,7 @@ class ProductsViewController: UIViewController {
         super.viewDidAppear(animated)
         let leftNavBarButton = UIBarButtonItem(customView: searchBar)
         self.navigationItem.leftBarButtonItem = leftNavBarButton
+        viewModel.viewDidAppear()
     }
     
     private func addSubviews() {
