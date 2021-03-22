@@ -10,7 +10,7 @@ import Foundation
 class PostReviewRequest: HttpRequest<Review, Review> {
     
     override var urlString: String {
-        return "http://localhost:3002/reviews/\(productId)"
+        return "\(ServiceUrls.reviewsServiceUrl)reviews/\(productId)"
     }
     
     override var method: String {

@@ -14,7 +14,7 @@ class GetProductsRequest: HttpRequest<String, [Product]> {
     }
     
     override var urlString: String {
-        return "http://localhost:3001/product"
+        return "\(ServiceUrls.productsServiceUrl)product"
     }
     
     func getProducts(complete: @escaping (Result<[Product], NetworkError>) -> Void) {

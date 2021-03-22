@@ -72,13 +72,10 @@ class ProductHeaderView: UIView {
     
     private func addConstraints() {
         
-//        heightAnchor.constraint(equalToConstant: 370).isActive = true
-        
         productImageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         productImageView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         productImageView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         productImageView.heightAnchor.constraint(equalToConstant: 300).isActive = true
-//        productImageView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         
         productNameLabel.topAnchor.constraint(equalTo: productImageView.bottomAnchor, constant: 8).isActive = true
         productNameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16).isActive = true

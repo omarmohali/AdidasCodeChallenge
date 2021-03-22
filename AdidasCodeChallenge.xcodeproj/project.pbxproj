@@ -31,6 +31,7 @@
 		13C2EFDE2608C0A10043CC73 /* GetProductsRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C2EFDD2608C0A10043CC73 /* GetProductsRequestMock.swift */; };
 		13C2EFE3260907130043CC73 /* ProductViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C2EFE2260907130043CC73 /* ProductViewModelTests.swift */; };
 		13C2EFE8260907C90043CC73 /* PostReviewRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C2EFE7260907C90043CC73 /* PostReviewRequestMock.swift */; };
+		13C2EFF02609548D0043CC73 /* ServiceUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C2EFEF2609548D0043CC73 /* ServiceUrls.swift */; };
 		13D357332606178000C1D6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D357322606178000C1D6C9 /* AppDelegate.swift */; };
 		13D357352606178000C1D6C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D357342606178000C1D6C9 /* SceneDelegate.swift */; };
 		13D357372606178000C1D6C9 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D357362606178000C1D6C9 /* ProductsViewController.swift */; };
@@ -86,6 +87,7 @@
 		13C2EFDD2608C0A10043CC73 /* GetProductsRequestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsRequestMock.swift; sourceTree = "<group>"; };
 		13C2EFE2260907130043CC73 /* ProductViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModelTests.swift; sourceTree = "<group>"; };
 		13C2EFE7260907C90043CC73 /* PostReviewRequestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostReviewRequestMock.swift; sourceTree = "<group>"; };
+		13C2EFEF2609548D0043CC73 /* ServiceUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceUrls.swift; sourceTree = "<group>"; };
 		13D3572F2606178000C1D6C9 /* AdidasCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdidasCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D357322606178000C1D6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13D357342606178000C1D6C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 		13A6F7A0260631F300E2D656 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				13C2EFF4260954940043CC73 /* Constants */,
 				13A6BDF026087E8900840AEE /* Reachability */,
 				13A6BDEF26087E7D00840AEE /* Requests */,
 				13BDEA5026089CA40073D559 /* Error */,
@@ -297,6 +300,14 @@
 				13C2EFE2260907130043CC73 /* ProductViewModelTests.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		13C2EFF4260954940043CC73 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				13C2EFEF2609548D0043CC73 /* ServiceUrls.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		13D357262606178000C1D6C9 = {
@@ -672,6 +683,7 @@
 				13BDEA6326089D200073D559 /* ViewController.swift in Sources */,
 				13A6BDE326080F5100840AEE /* PostReviewRequest.swift in Sources */,
 				139D1D3E2607FB1B0047139D /* AddReviewViewController.swift in Sources */,
+				13C2EFF02609548D0043CC73 /* ServiceUrls.swift in Sources */,
 				13A6F7AA260682B600E2D656 /* DisplayProductViewModel.swift in Sources */,
 				13D357372606178000C1D6C9 /* ProductsViewController.swift in Sources */,
 				13D3577226062B5B00C1D6C9 /* ProductsViewModel.swift in Sources */,

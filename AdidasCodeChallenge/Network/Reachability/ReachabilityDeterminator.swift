@@ -17,5 +17,4 @@ class ReachabilityDeterminator {
         return reachability?.connection != .unavailable
     }
     
-    
 }
