@@ -17,6 +17,7 @@ class ProductsViewController: ViewController<ProductsViewModel> {
         tv.dataSource = self
         tv.delegate = self
         tv.separatorStyle = .none
+        tv.backgroundColor = .white
         return tv
     }()
     
@@ -65,14 +66,12 @@ class ProductsViewController: ViewController<ProductsViewModel> {
 
 extension ProductsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.getFilteredProducts()?.count ?? 0
+        return viewModel.getFilteredProductsViewModels()?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: productCellId) as! ProductCell
-        if let product = viewModel.getFilteredProducts()?[indexPath.row] {
-            cell.viewModel = DisplayProductViewModel(product: product)
-        }
+        cell.viewModel = viewModel.getFilteredProductsViewModels()?[indexPath.row]
         return cell
     }
 }

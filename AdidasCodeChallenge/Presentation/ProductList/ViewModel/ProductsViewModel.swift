@@ -14,6 +14,14 @@ class ProductsViewModel: ViewControllerViewModel {
     var filteredDidChange: (() -> Void)?
     private var filteredProducts: [Product]? {
         didSet {
+            if let filteredProducts = filteredProducts {
+                filteredProductsViewModels = filteredProducts.map({DisplayProductViewModel(product: $0)})
+            }
+        }
+    }
+    
+    private var filteredProductsViewModels: [DisplayProductViewModel]? {
+        didSet {
             filteredDidChange?()
         }
     }
@@ -47,6 +55,10 @@ class ProductsViewModel: ViewControllerViewModel {
                 })
             }
         })
+    }
+    
+    func getFilteredProductsViewModels() -> [DisplayProductViewModel]? {
+        return filteredProductsViewModels
     }
     
     func getFilteredProducts() -> [Product]? {

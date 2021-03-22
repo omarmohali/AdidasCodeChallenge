@@ -22,6 +22,7 @@ class ProductCell: UITableViewCell {
         iv.translatesAutoresizingMaskIntoConstraints = false
         iv.contentMode = .scaleAspectFit
         iv.clipsToBounds = true
+        iv.layer.cornerRadius = 8
         return iv
     }()
     
@@ -29,7 +30,7 @@ class ProductCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
-        label.font = UIFont.systemFont(ofSize: 12.0)
+        label.font = UIFont.boldSystemFont(ofSize: 16)
         return label
     }()
     
@@ -38,6 +39,7 @@ class ProductCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
         label.font = UIFont.systemFont(ofSize: 12.0)
+        label.numberOfLines = 3
         return label
     }()
     
@@ -45,7 +47,7 @@ class ProductCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
-        label.font = UIFont.systemFont(ofSize: 12.0)
+        label.font = UIFont.boldSystemFont(ofSize: 14.0)
         return label
     }()
     
@@ -68,20 +70,22 @@ class ProductCell: UITableViewCell {
         
         productImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16).isActive = true
         productImageView.widthAnchor.constraint(equalTo: productImageView.heightAnchor).isActive = true
-        productImageView.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        productImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+        productImageView.heightAnchor.constraint(equalToConstant: 120).isActive = true
+        productImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8).isActive = true
+        productImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8).isActive = true
         
-        productNameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8).isActive = true
+        productNameLabel.topAnchor.constraint(equalTo: productImageView.topAnchor, constant: 8).isActive = true
         productNameLabel.leadingAnchor.constraint(equalTo: productImageView.trailingAnchor, constant: 8).isActive = true
         productNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 16).isActive = true
-        
+
         productDescriptionLabel.topAnchor.constraint(equalTo: productNameLabel.bottomAnchor, constant: 4).isActive = true
         productDescriptionLabel.leadingAnchor.constraint(equalTo: productImageView.trailingAnchor, constant: 8).isActive = true
-        productDescriptionLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 16).isActive = true
-        
-        productPriceLabel.topAnchor.constraint(equalTo: productDescriptionLabel.bottomAnchor, constant: 4).isActive = true
+        productDescriptionLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16).isActive = true
+        productDescriptionLabel.bottomAnchor.constraint(equalTo: productPriceLabel.topAnchor, constant: 4).isActive = true
+
         productPriceLabel.leadingAnchor.constraint(equalTo: productImageView.trailingAnchor, constant: 8).isActive = true
-        productPriceLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8).isActive = true
+        productPriceLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 16).isActive = true
+        productPriceLabel.bottomAnchor.constraint(equalTo: productImageView.bottomAnchor, constant: -8).isActive = true
         
     }
     

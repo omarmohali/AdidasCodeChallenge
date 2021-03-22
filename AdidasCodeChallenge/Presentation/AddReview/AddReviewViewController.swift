@@ -39,11 +39,12 @@ class AddReviewViewController: UIViewController {
     private lazy var submitButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .black
+        button.backgroundColor = .lightGray
         button.setTitleColor(.white, for: .normal)
         button.setTitle("Submit", for: .normal)
         button.layer.cornerRadius = 5
         button.addTarget(self, action: #selector(actionOfSubmitButton), for: .touchUpInside)
+        button.isEnabled = false
         return button
     }()
     
@@ -116,6 +117,12 @@ class AddReviewViewController: UIViewController {
                 (view as? UIImageView)?.image = UIImage(systemName: "star")
             }
         }
+        enableSubmitButton()
+    }
+    
+    private func enableSubmitButton() {
+        submitButton.backgroundColor = .black
+        submitButton.isEnabled = true
     }
     
     @objc private func actionOfSubmitButton() {

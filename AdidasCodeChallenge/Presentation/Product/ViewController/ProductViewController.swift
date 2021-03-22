@@ -11,11 +11,13 @@ class ProductViewController: ViewController<ProductViewModel> {
     
     private let reviewCellId = "Cell"
     private lazy var tableView: UITableView = {
-        let tv = UITableView()
+        let tv = UITableView(frame: .zero, style: .grouped)
         tv.translatesAutoresizingMaskIntoConstraints = false
         tv.register(ReviewCell.self, forCellReuseIdentifier: reviewCellId)
         tv.dataSource = self
+        tv.delegate = self
         tv.separatorStyle = .none
+        tv.backgroundColor = .white
         return tv
     }()
     
@@ -34,8 +36,8 @@ class ProductViewController: ViewController<ProductViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let dispayProductViewModel = DisplayProductViewModel(product: viewModel.getProduct())
-        tableView.tableHeaderView = ProductHeaderView(viewModel: dispayProductViewModel)
+        self.tableView.sectionHeaderHeight = UITableView.automaticDimension
+        self.tableView.estimatedSectionHeaderHeight = 300
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -44,18 +46,8 @@ class ProductViewController: ViewController<ProductViewModel> {
         navigationItem.rightBarButtonItem = addReviewButton
     }
     
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        updateHeaderViewHeight(for: tableView.tableHeaderView)
-    }
-    
     private func addSubviews() {
         view.addSubview(tableView)
-    }
-    
-    func updateHeaderViewHeight(for header: UIView?) {
-        guard let header = header else { return }
-        header.frame.size.height = header.systemLayoutSizeFitting(CGSize(width: view.bounds.width - 32.0, height: 0)).height
     }
     
     private func addConstraints() {
@@ -92,6 +84,14 @@ extension ProductViewController: UITableViewDataSource {
         cell.viewModel = ReviewCellViewModel(review: viewModel.getProduct().reviews[indexPath.row])
         return cell
     }
-    
-    
+
+}
+
+
+extension ProductViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let dispayProductViewModel = DisplayProductViewModel(product: viewModel.getProduct())
+        let productHeaderView = ProductHeaderView(viewModel: dispayProductViewModel)
+        return productHeaderView
+    }
 }
