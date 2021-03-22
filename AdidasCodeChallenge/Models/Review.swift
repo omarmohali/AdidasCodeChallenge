@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Review: Codable {
+struct Review: Codable, Equatable {
     let productId: String
     let locale: String
     let rating: Int

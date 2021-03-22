@@ -20,7 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        let viewModel = ProductsViewModel()
+        let getProductsRequest = GetProductsRequest()
+        let viewModel = ProductsViewModel(getProductsRequest: getProductsRequest)
         let viewController = ProductsViewController(viewModel: viewModel)
         let navigationController = UINavigationController(rootViewController: viewController)
         window.rootViewController = navigationController

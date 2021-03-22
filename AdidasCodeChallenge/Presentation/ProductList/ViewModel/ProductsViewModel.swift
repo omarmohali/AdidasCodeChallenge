@@ -24,12 +24,17 @@ class ProductsViewModel: ViewControllerViewModel {
         }
     }
     
+    var getProductsRequest: GetProductsRequest
+    init(getProductsRequest: GetProductsRequest) {
+        self.getProductsRequest = getProductsRequest
+        super.init()
+    }
+    
     func viewDidAppear() {
         getProducts()
     }
     
     private func getProducts() {
-        let getProductsRequest = GetProductsRequest()
         getProductsRequest.getProducts(complete: {
             [weak self] result in
             switch result {

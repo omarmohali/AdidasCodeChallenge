@@ -25,6 +25,10 @@
 		13BDEA5226089CB50073D559 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BDEA5126089CB50073D559 /* NetworkError.swift */; };
 		13BDEA5E26089CF30073D559 /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BDEA5D26089CF30073D559 /* ViewControllerViewModel.swift */; };
 		13BDEA6326089D200073D559 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BDEA6226089D200073D559 /* ViewController.swift */; };
+		13BDEA742608BC150073D559 /* ReachabilityDeterminatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BDEA732608BC150073D559 /* ReachabilityDeterminatorMock.swift */; };
+		13BDEA792608BCA20073D559 /* HttpRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BDEA782608BCA20073D559 /* HttpRequestMock.swift */; };
+		13C2EFD92608C0750043CC73 /* ProductsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C2EFD82608C0750043CC73 /* ProductsViewModelTests.swift */; };
+		13C2EFDE2608C0A10043CC73 /* GetProductsRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C2EFDD2608C0A10043CC73 /* GetProductsRequestMock.swift */; };
 		13D357332606178000C1D6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D357322606178000C1D6C9 /* AppDelegate.swift */; };
 		13D357352606178000C1D6C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D357342606178000C1D6C9 /* SceneDelegate.swift */; };
 		13D357372606178000C1D6C9 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D357362606178000C1D6C9 /* ProductsViewController.swift */; };
@@ -74,6 +78,10 @@
 		13BDEA5126089CB50073D559 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		13BDEA5D26089CF30073D559 /* ViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewModel.swift; sourceTree = "<group>"; };
 		13BDEA6226089D200073D559 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13BDEA732608BC150073D559 /* ReachabilityDeterminatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityDeterminatorMock.swift; sourceTree = "<group>"; };
+		13BDEA782608BCA20073D559 /* HttpRequestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestMock.swift; sourceTree = "<group>"; };
+		13C2EFD82608C0750043CC73 /* ProductsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModelTests.swift; sourceTree = "<group>"; };
+		13C2EFDD2608C0A10043CC73 /* GetProductsRequestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsRequestMock.swift; sourceTree = "<group>"; };
 		13D3572F2606178000C1D6C9 /* AdidasCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdidasCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D357322606178000C1D6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13D357342606178000C1D6C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -267,6 +275,24 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		13BDEA6C2608BBFC0073D559 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				13BDEA732608BC150073D559 /* ReachabilityDeterminatorMock.swift */,
+				13BDEA782608BCA20073D559 /* HttpRequestMock.swift */,
+				13C2EFDD2608C0A10043CC73 /* GetProductsRequestMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		13C2EFC12608BDC70043CC73 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				13C2EFD82608C0750043CC73 /* ProductsViewModelTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		13D357262606178000C1D6C9 = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +335,8 @@
 		13D357482606178300C1D6C9 /* AdidasCodeChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				13BDEA6C2608BBFC0073D559 /* Mocks */,
+				13C2EFC12608BDC70043CC73 /* Tests */,
 				13D357492606178300C1D6C9 /* AdidasCodeChallengeTests.swift */,
 				13D3574B2606178300C1D6C9 /* Info.plist */,
 			);
@@ -660,6 +688,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13BDEA742608BC150073D559 /* ReachabilityDeterminatorMock.swift in Sources */,
+				13BDEA792608BCA20073D559 /* HttpRequestMock.swift in Sources */,
+				13C2EFDE2608C0A10043CC73 /* GetProductsRequestMock.swift in Sources */,
+				13C2EFD92608C0750043CC73 /* ProductsViewModelTests.swift in Sources */,
 				13D3574A2606178300C1D6C9 /* AdidasCodeChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
